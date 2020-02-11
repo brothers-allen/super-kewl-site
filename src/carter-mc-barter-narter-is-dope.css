@@ -1,7 +1,32 @@
-body {
-  min-height: 100vh;
+div{
+  min-height: 5vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+.button{
+  font: roboto;
+  font-size: 18px;
+  cursor: pointer;
+}
+.button:active{
+  font-size: 24px;
+  text-align: center;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {left:0px; top:5px;}
+  50% {left:200px; top:5px}
+  100% {left:-200px; top:5px}
+}
+
+
+
+
+
