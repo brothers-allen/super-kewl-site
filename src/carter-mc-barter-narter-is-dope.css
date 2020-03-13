@@ -10,7 +10,7 @@ div{
   font-size: 18px;
   cursor: pointer;
 }
-.button:active{
+.button:hover{
   font-size: 24px;
   text-align: center;
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
