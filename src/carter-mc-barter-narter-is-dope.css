@@ -1,4 +1,8 @@
-// Common
+/* Common */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 .flex-centered {
   display: flex;
@@ -7,32 +11,97 @@
   justify-content: center;
 }
 
-// Page- & Component-specific
+/* Page- & Component-specific */
 
-.main-page-title {
-  text-align: center;
-  min-height: 5vh;
-  font: roboto;
+.main-page-title-text {
   font-size: 24px;
 }
 
-.main-page-title:hover {
-  font-size: 24px;
-  text-align: center;
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  color: transparent;
-  position: relative;
-  animation: rainbow-slide 5s linear 2s infinite alternate;
+.main-page-title-text:hover {
+  animation: rainbow-slide 3s linear 2s infinite;
 }
+
+/* Animations */
 
 @keyframes rainbow-slide {
-  0%   {left:0px; top:5px;}
-  50% {left:200px; top:5px}
-  100% {left:-200px; top:5px}
+  0% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 0px;
+  }
+  25% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 50px;
+  }
+  50% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 0px;
+  }
+  75% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: -50px;
+  }
+  100% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 0px;
+  }
 }
-
-
-
-
-
