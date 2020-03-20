@@ -1,7 +1,107 @@
+/* Common */
+
 body {
-  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex-centered {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+/* Page- & Component-specific */
+
+.main-page-title-text {
+  font-size: 24px;
+}
+
+.main-page-title-text:hover {
+  animation: rainbow-slide 3s linear 2s infinite;
+}
+
+/* Animations */
+
+@keyframes rainbow-slide {
+  0% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 0px;
+  }
+  25% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 50px;
+  }
+  50% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 0px;
+  }
+  75% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: -50px;
+  }
+  100% {
+    background-image: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 0px;
+  }
 }
