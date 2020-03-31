@@ -13,8 +13,14 @@ body {
 
 /* Page- & Component-specific */
 
-.main-page-title-text {
-  font-size: 24px;
+.main-page-title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-page-title-badge {
+  margin-top: 5px;
+  margin-left: 2px;
 }
 
 .main-page-title-text:hover {
@@ -24,7 +30,16 @@ body {
 /* Animations */
 
 .rainbow-text:hover {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
   -webkit-background-clip: text;
   color: transparent;
 }
